@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/user-tokens/(.*)": "<rootDir>/../libs/user-tokens/src/$1",
+    "@app/user-tokens": "<rootDir>/../libs/user-tokens/src",
+    "@app//pipes/global-validation/(.*)": "<rootDir>/../libs/pipes/global-validation/src/$1",
+    "@app//pipes/global-validation": "<rootDir>/../libs/pipes/global-validation/src",
+    "@app/guards/access-token/(.*)": "<rootDir>/../libs/guards/access-token/src/$1",
+    "@app/guards/access-token": "<rootDir>/../libs/guards/access-token/src",
+    "@app/encryption/(.*)": "<rootDir>/../libs/encryption/src/$1",
+    "@app/encryption": "<rootDir>/../libs/encryption/src"
+  }
+}
