@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "user-tokens": {
+      "type": "library",
+      "root": "libs/user-tokens",
+      "entryFile": "index",
+      "sourceRoot": "libs/user-tokens/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/user-tokens/tsconfig.lib.json"
+      }
+    },
+    "/pipes/global-validation": {
+      "type": "library",
+      "root": "libs/pipes/global-validation",
+      "entryFile": "index",
+      "sourceRoot": "libs/pipes/global-validation/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/pipes/global-validation/tsconfig.lib.json"
+      }
+    },
+    "guards/access-token": {
+      "type": "library",
+      "root": "libs/guards/access-token",
+      "entryFile": "index",
+      "sourceRoot": "libs/guards/access-token/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/guards/access-token/tsconfig.lib.json"
+      }
+    },
+    "encryption": {
+      "type": "library",
+      "root": "libs/encryption",
+      "entryFile": "index",
+      "sourceRoot": "libs/encryption/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/encryption/tsconfig.lib.json"
+      }
+    }
+  }
+}
